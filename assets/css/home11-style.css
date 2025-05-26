@@ -16,26 +16,28 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
-  z-index: 9999999;
-}
-
-.navbar.nav-scroll {
-  padding: 0;
-  position: fixed;
-  top: -80px;
-  padding: 15px 0;
-  -webkit-transition: -webkit-transform .8s;
-  transition: -webkit-transform .8s;
-  -o-transition: transform .8s;
-  transition: transform .8s;
-  transition: transform .8s, -webkit-transform .8s;
-  -webkit-transform: translateY(80px);
-  -ms-transform: translateY(80px);
-  transform: translateY(80px);
-  background: rgba(0, 0, 0, 0.55);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0);
+  z-index: 9999999; }
+  .navbar.nav-scroll {
+    padding: 0;
+    position: fixed;
+    top: -80px;
+    padding: 15px 0;
+    -webkit-transition: -webkit-transform .8s;
+    transition: -webkit-transform .8s;
+    -o-transition: transform .8s;
+    transition: transform .8s;
+    transition: transform .8s, -webkit-transform .8s;
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+    background: rgba(0,0,0,0.55);
+	-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); }
+	
+	
+	.navbar.nav-scroll.navbar-nav{
+		border:1px solid rgba(0,0,0,0.7) !important;
 }
 
 .navbar .logo {
