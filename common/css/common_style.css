@@ -1091,7 +1091,7 @@ a {
   position: absolute; }
 
 .cursor-pointer {
-  cursor: pointer; }
+  cursor: pointer; !important;}
 
 .revers-x {
   -webkit-transform: rotateX(180deg);
