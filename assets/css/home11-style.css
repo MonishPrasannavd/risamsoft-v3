@@ -99,8 +99,9 @@
     .header-ms .award-box .img {
       text-align: center;
       margin-bottom: 15px;
-      -webkit-animation: rotatecircle 20s infinite linear;
-      animation: rotatecircle 20s infinite linear; }
+    /*  -webkit-animation: rotatecircle 20s infinite linear;*/
+    /*  animation: rotatecircle 20s infinite linear; 
+	*/  }
     .header-ms .award-box h6 {
       color: #2A2D2F; }
   .header-ms .vid-box {
