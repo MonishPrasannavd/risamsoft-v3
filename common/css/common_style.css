@@ -1091,7 +1091,8 @@ a {
   position: absolute; }
 
 .cursor-pointer {
-  cursor: pointer; !important;}
+  cursor: pointer;
+  }
 
 .revers-x {
   -webkit-transform: rotateX(180deg);
@@ -2427,7 +2428,17 @@ img.left {
     margin-right: -15px; }
     .row.xxlg-marg > * {
       padding-left: 15px;
-      padding-right: 15px; } }
+      padding-right: 15px; } 
+	 
+	
+}
+
+@media screen and (min-width: 992px) {
+	 .cursor-pointer{
+		display:none !important;	 
+	  }
+		
+}
 
 @media screen and (max-width: 768px) {
   .sm-mb10 {
