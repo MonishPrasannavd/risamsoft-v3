@@ -14,7 +14,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  background: transparent;
+  background: #00000080;
   z-index: 9999999; }
   .navbar.nav-scroll {
     padding: 0;
