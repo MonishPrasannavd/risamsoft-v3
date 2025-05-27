@@ -1362,7 +1362,10 @@ a:hover {
 .cursor-pointer {
   cursor: pointer;
 }
-
+.cursor-pointer span{
+  color: #FFF !important;
+  font-size: 26px;
+}
 .revers-x {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
