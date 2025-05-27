@@ -501,12 +501,21 @@
   background: #0D0D0D;
   color: #fff;
 }
-
+.testim-sm .brands{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 35px 20px;
+  margin-bottom: 3rem;
+}
 .testim-sm .brands h6 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
+}
+.brands .img{
+  height:30px;
+  width:230px;
+  float:right;
 }
 
 .testim-sm .brands .row {
@@ -796,6 +805,11 @@ p {
   font-weight: 400;
   margin: 200px 0px 0px 150px;
 }
+.flowless-text{
+  font-weight:200;
+  margin: 10px 0;
+  line-height:25px;
+}
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
@@ -835,6 +849,14 @@ p {
   .hero-ms .exp .text-right h2 {
     margin: 100px 0px 0px 100px;
     text-align: center;
+  }
+  .brand-text h3{
+    font-size: 36px !important;
+  }
+  .brands .img{
+    height:30px;
+    width:300px;
+    float:right;
   }
 }
 

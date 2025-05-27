@@ -12,13 +12,16 @@
     <meta name="author" content="">
 
     <!-- Title  -->
-   <title>RisamSoft - Empowering Digital Transformation</title>
+    <title>RisamSoft - Empowering Digital Transformation</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/imgs/risam_favicon.svg">
 
     <!-- Google Fonts -->
-    <link href="../../../../fonts.googleapis.com/css21141.css?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- Plugins -->
     <link rel="stylesheet" href="common/css/plugins.css">
@@ -29,17 +32,61 @@
 
 </head>
 <style>
-.read-more-link {
-  color: blue;
-  font-weight: bold;
-  text-decoration: none;
-}
+    .read-more-link {
+        color: blue;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-.read-more-link:hover {
-  text-decoration: underline;
-}
+    .read-more-link:hover {
+        text-decoration: underline;
+    }
 
-</style
+    /* Scroll to Top Button Styles */
+    .scroll-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+        background-color: #1567F5;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+    }
+
+    .scroll-to-top.show {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .scroll-to-top:hover {
+        background-color: #333;
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        .scroll-to-top {
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+</style>
 
 <body>
 
@@ -73,11 +120,9 @@
 
     <!-- ==================== Start progress-scroll-button ==================== -->
 
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- ==================== End progress-scroll-button ==================== -->
 
@@ -90,8 +135,8 @@
 
             <!-- Logo -->
             <a class="logo" href="#">
-               <img src="./assets/imgs/white_logo.svg" style="width:150px;" alt="logo">
-				
+                <img src="./assets/imgs/white_logo.svg" style="width:150px;" alt="logo">
+
             </a>
 
             <!-- navbar links -->
@@ -109,7 +154,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Careers</a>
                     </li>
-					<li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Contacts Us</a>
                     </li>
                 </ul>
@@ -118,11 +163,11 @@
                 <a href="#" class="butn butn-rounded">
                     <div class="d-flex align-items-center">
                         <span style="margin-right:10px;"> Send Message</span>
-                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
-						   width="18" height="18" viewBox="0 0 24 24" fill="none">
-						<path d="M21 3V16.4751H19.5083V5.53591L4.0442 21L3 19.9061L18.4144 4.49171H7.47514V3H21Z"
-							  fill="currentColor" />
-					  </svg>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M21 3V16.4751H19.5083V5.53591L4.0442 21L3 19.9061L18.4144 4.49171H7.47514V3H21Z"
+                                fill="currentColor" />
+                        </svg>
                     </div>
                 </a>
                 <div class="menu-icon cursor-pointer">
@@ -139,17 +184,18 @@
                 <ul class="main-menu rest">
                     <li>
                         <div class="o-hidden">
-                            
+
                             <div class="link cursor-pointer dmenu">
-                                <span class="fill-text" data-text="Home"> <a href="#" class="link cursor-pointer dmenu">Home</a></span>
+                                <span class="fill-text" data-text="Home"> <a href="#"
+                                        class="link cursor-pointer dmenu">Home</a></span>
                             </div>
                         </div>
-                        
+
                     </li>
                     <li>
                         <div class="o-hidden">
-                            <div class="link cursor-pointer dmenu"><span class="fill-text"
-                                    data-text="Pages">About Us</span>
+                            <div class="link cursor-pointer dmenu"><span class="fill-text" data-text="Pages">About
+                                    Us</span>
                                 <i></i>
                             </div>
                         </div>
@@ -214,7 +260,8 @@
                     </li>
                     <li>
                         <div class="o-hidden">
-                            <div class="link cursor-pointer dmenu"><span class="fill-text" data-text="Blog">Careers</span>
+                            <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                    data-text="Blog">Careers</span>
                                 <i></i>
                             </div>
                         </div>
@@ -234,8 +281,8 @@
                     </li>
                     <li>
                         <div class="o-hidden">
-                            <a href="#contact.html" class="link"><span class="fill-text"
-                                    data-text="Contact Us">Contact Us</span></a>
+                            <a href="#contact.html" class="link"><span class="fill-text" data-text="Contact Us">Contact
+                                    Us</span></a>
                         </div>
                     </li>
                 </ul>
@@ -271,10 +318,6 @@
         <div id="smooth-content">
 
             <main>
-
-
-
-
                 <!-- ==================== Start Header ==================== -->
 
                 <header class="header-ms bg-img" data-background="assets/imgs/header/bg.jpg" data-overlay-dark="4">
@@ -283,14 +326,15 @@
                             <div class="col-lg-9">
                                 <div class="caption mb-100">
                                     <h1>Empowering <br> <span class="arrow">
-									<svg xmlns="http://www.w3.org/2000/svg.html"
-                                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <svg xmlns="http://www.w3.org/2000/svg.html" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
                                                 <path
                                                     d="M21 3V16.4751H19.5083V5.53591L4.0442 21L3 19.9061L18.4144 4.49171H7.47514V3H21Z"
                                                     fill="#000"></path>
                                             </svg></span> <span class="italic">D</span>igital <span
                                             class="fw-200 underline">Transformation</span></h1>
-                                    <p class="mt-30">Risamsoft is a leading IT Services & Staffing Solutions dedicated to <br> delivering high-impact technology solutions.</p>
+                                    <p class="mt-30">Risamsoft is a leading IT Services & Staffing Solutions dedicated
+                                        to <br> delivering high-impact technology solutions.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -304,7 +348,7 @@
                                         </svg>
                                     </div>
                                     <div class="img">
-                                        <img  style="width:80%;" src="assets/imgs/header/Awardnew.svg" alt="">
+                                        <img style="width:80%;" src="assets/imgs/header/Awardnew.svg" alt="">
                                     </div>
                                     <h6>Great Place to Work<br>(USA Certified)</h6>
                                 </div>
@@ -315,8 +359,7 @@
                                 <div class="vid-box mb-40">
                                     <video autoplay muted disablePictureInPicture controlsList="nodownload"
                                         poster="assets/imgs/vid.jpg">
-                                        <source
-                                            src="assets/imgs/vid.mp4">
+                                        <source src="assets/imgs/vid.mp4">
                                     </video>
                                 </div>
                             </div>
@@ -327,7 +370,8 @@
                                             <div class="icon-img-80 mb-30">
                                                 <img src="assets/imgs/header/trending-features.png" alt="">
                                             </div>
-                                            <h6 class="mb-15 hero-text">We've served multitudes of customers with care.</h6>
+                                            <h6 class="mb-15 hero-text">We've served multitudes of customers with care.
+                                            </h6>
                                             <!--p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<p-->
                                         </div>
                                     </div>
@@ -336,7 +380,8 @@
                                             <div class="icon-img-80 mb-30">
                                                 <img src="assets/imgs/header/custom-projects.png" alt="">
                                             </div>
-                                            <h6 class="mb-15 hero-text">Excellence begins with our flawless process.</h6>
+                                            <h6 class="mb-15 hero-text">Excellence begins with our flawless process.
+                                            </h6>
                                             <!--p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p-->
                                         </div>
                                     </div>
@@ -358,9 +403,12 @@
                             <div class="col-lg-11">
                                 <span class="sub-head mb-30">Our Story</span>
                                 <div class="text-center main-text">
-                                    <h2>Risamsoft: IT Service Experts with a <br>Belief in  <span class="main-color">Exceptional Talent</span>. </h2>
-									<span class="about-text">We understand that finding the right IT professionals can be a daunting task, 
-									especially in today's competitive market. We have built a team of experts passionate about matching businesses with top-tier talent..</span>
+                                    <h2>Risamsoft: IT Service Experts with a <br>Belief in <span
+                                            class="main-color">Exceptional Talent</span>. </h2>
+                                    <span class="about-text">We understand that finding the right IT professionals can
+                                        be a daunting task,
+                                        especially in today's competitive market. We have built a team of experts
+                                        passionate about matching businesses with top-tier talent..</span>
                                     <div class="img1 fit-img">
                                         <img src="assets/imgs/intro/left_img.webp" alt="">
                                     </div>
@@ -369,19 +417,19 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-lg-7">
+                            <div class="col-lg-7">
                                 <div class="qoutes d-flex">
                                     <div>
                                         <div class="icon-img-80">
-                                            <img src="common/imgs/icons/right_quotes.svg" alt=""
-                                                class="full-width">
-												
-												 
+                                            <img src="common/imgs/icons/right_quotes.svg" alt="" class="full-width">
+
+
                                         </div>
                                     </div>
                                     <div class="text ml-40">
                                         <h4 class="fw-300">
-										We connect businesses with the best IT professionals in the industry to achieve their goals and succeed in the digital world
+                                            We connect businesses with the best IT professionals in the industry to
+                                            achieve their goals and succeed in the digital world
                                         </h4>
                                         <div class="mt-40 d-flex align-items-center">
                                             <!--div>
@@ -409,7 +457,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </section>
 
@@ -450,7 +498,8 @@
                                         </div>
                                     </div>
                                     <div class="text">
-                                        <p>In today's data-driven world, the ability to harness the potential of data is a competitive advantage that no business can afford to overlook..</p>
+                                        <p>In today's data-driven world, the ability to harness the potential of data is
+                                            a competitive advantage that no business can afford to overlook..</p>
                                     </div>
                                 </div>
                             </div>
@@ -465,11 +514,12 @@
                                         </div>
                                     </div>
                                     <div class="text">
-                                        <p>At RisamSoft, we understand that the cornerstone of a successful business is a team of dedicated professionals who possess the right skills and ..</p>
+                                        <p>At RisamSoft, we understand that the cornerstone of a successful business is
+                                            a team of dedicated professionals who possess the right skills and ..</p>
                                     </div>
                                 </div>
                             </div>
-							 <!--div class="col-lg-4">
+                            <!--div class="col-lg-4">
                                 <div class="item">
                                     <div class="d-flex align-items-center">
                                         <h6>Mobilessss <br> Apps</h6>
@@ -511,8 +561,10 @@
                                                 <div>
                                                     <!--span class="tag">Branding</span-->
                                                     <h6>Project Visualization</h6>
-													<div style="font-weight:300;">Our increasingly data-driven world, it’s more important than ever to have accessible ways to view and understand data
-													</div>
+                                                    <div style="font-weight:300;">Our increasingly data-driven world,
+                                                        it's more important than ever to have accessible ways to view
+                                                        and understand data
+                                                    </div>
                                                 </div>
                                                 <div class="ml-auto">
                                                     <a href="#0" class="arrow icon-img-40">
@@ -529,9 +581,11 @@
                                                 <div>
                                                     <!--span class="tag">Branding</span-->
                                                     <h6>Creation & Selection</h6>
-													<div style="font-weight:300;">We look at ideation techniques, it is essential to choose the ones that fit the type of ideas you’re trying to generate.
+                                                    <div style="font-weight:300;">We look at ideation techniques, it is
+                                                        essential to choose the ones that fit the type of ideas you're
+                                                        trying to generate.
 
-													</div>
+                                                    </div>
                                                 </div>
                                                 <div class="ml-auto">
                                                     <a href="#0" class="arrow icon-img-30">
@@ -548,8 +602,10 @@
                                                 <div>
                                                     <!--span class="tag">Branding</span-->
                                                     <h6>Launch Compaign</h6>
-													<div style="font-weight:300;"> We explore potential many opportunities for your launch, define aims and prepare your launch timeline.
-													</div>
+                                                    <div style="font-weight:300;"> We explore potential many
+                                                        opportunities for your launch, define aims and prepare your
+                                                        launch timeline.
+                                                    </div>
                                                 </div>
                                                 <div class="ml-auto">
                                                     <a href="#0" class="arrow icon-img-40">
@@ -566,8 +622,10 @@
                                                 <div>
                                                     <!--span class="tag">Branding</span-->
                                                     <h6>Ideas Implemenatation</h6>
-													<div style="font-weight:300;"> Our Managing ideas are structured with discipline. Doing so also provides a constant flow of ideas.
-													</div>
+                                                    <div style="font-weight:300;"> Our Managing ideas are structured
+                                                        with discipline. Doing so also provides a constant flow of
+                                                        ideas.
+                                                    </div>
                                                 </div>
                                                 <div class="ml-auto">
                                                     <a href="#0" class="arrow icon-img-40">
@@ -577,15 +635,17 @@
                                             </div>
                                         </div>
                                     </div>
-									 <div class="card-item">
+                                    <div class="card-item">
                                         <div class="img fit-img">
                                             <img src="assets/imgs/works/online_marketing.jpg" alt="">
                                             <div class="cont d-flex align-items-center">
                                                 <div>
                                                     <!--span class="tag">Branding</span-->
                                                     <h6>Online Marketing</h6>
-													<div style="font-weight:300;"> Our Marketing techniques and strategies are used to target potential clients to promote goods and services.</p>
-													</div>
+                                                    <div style="font-weight:300;"> Our Marketing techniques and
+                                                        strategies are used to target potential clients to promote goods
+                                                        and services.</p>
+                                                    </div>
                                                 </div>
                                                 <div class="ml-auto">
                                                     <a href="#0" class="arrow icon-img-40">
@@ -607,13 +667,15 @@
 
                 <!-- ==================== Start Services ==================== -->
 
-                <section class="services-ms section-padding" data-overlay-dark="0">
+                <section class="services-ms section-padding pb-60" data-overlay-dark="0">
                     <div class="container">
                         <div class="sec-head text-center mb-70">
                             <h6 class="sub-title main-color mb-15">What we offers</h6>
-                            <h3 class="text-u">Our Flawless Process</h3><br>
-							<div style="font-weight:200;mrgin:-15px;line-height:25px;">At Risamsoft, we have meticulously designed a process to ensure that we seamlessly 
-							<br>connect you with the most qualified and compatible IT professionals.</div>
+                            <h3 class="text-u">Our Flawless Process</h3>
+                            <div class="flowless-text">At Risamsoft, we have meticulously designed a process to ensure
+                                that we seamlessly
+                                <br>connect you with the most qualified and compatible IT professionals.
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-3 col-md-6">
@@ -622,11 +684,12 @@
                                         <img src="assets/imgs/services/icon1.png" alt="">
                                     </div>
                                     <h6 class="mb-15">Needs Assessment</h6>
-                                    <p class="fz-14">We engage closely with your organization to understand your requirements, 
-									including technical expertise, project timelines, etc.
-									 
-									</p>
-                                    <a href="#0" class="arrow mt-30">
+                                    <p class="fz-14">We engage closely with your organization to understand your
+                                        requirements,
+                                        including technical expertise, project timelines, etc.
+
+                                    </p>
+                                    <a href="#" class="arrow mt-30">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
                                             <path
@@ -642,9 +705,10 @@
                                         <img src="assets/imgs/services/icon2.png" alt="">
                                     </div>
                                     <h6 class="mb-15">Talent Sourcing and Screening</h6>
-                                    <p class="fz-14">We leverage our network and industry expertise to screen and identify highly qualified IT professionals.
-									
-									</p>
+                                    <p class="fz-14">We leverage our network and industry expertise to screen and
+                                        identify highly qualified IT professionals.
+
+                                    </p>
                                     <a href="#0" class="arrow mt-30">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -661,7 +725,8 @@
                                         <img src="assets/imgs/services/icon3.png" alt="">
                                     </div>
                                     <h6 class="mb-15">Screening and Evaluation</h6>
-                                    <p class="fz-14">Utilizing our industry expertise, we conduct a talent search, identifying candidates who meet your precise technical and cultural criteria</p>
+                                    <p class="fz-14">Utilizing our industry expertise, we conduct a talent search,
+                                        identifying candidates who meet your precise technical and cultural criteria</p>
                                     <a href="#0" class="arrow mt-30">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -678,7 +743,8 @@
                                         <img src="assets/imgs/services/icon4.png" alt="">
                                     </div>
                                     <h6 class="mb-15">Placement and Ongoing Support</h6>
-                                    <p class="fz-14">We ensure seamless onboarding and ongoing support to guarantee your satisfaction and success.</p>
+                                    <p class="fz-14">We ensure seamless onboarding and ongoing support to guarantee your
+                                        satisfaction and success.</p>
                                     <a href="#0" class="arrow mt-30">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none">
@@ -724,7 +790,7 @@
                                                     <p>CEO & Founder</p>
                                                 </div>
                                             </div>
-                                            <h3>“Excellent</h3>
+                                            <h3>"Excellent</h3>
                                         </div>
                                         <div>
                                             <div class="rate">
@@ -739,7 +805,10 @@
                                                 </h5>
                                             </div>
                                             <div class="mt-15">
-                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac leo!.</h6>
+                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur
+                                                    dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac
+                                                    leo!.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -758,7 +827,7 @@
                                                     <p>CEO & Founder</p>
                                                 </div>
                                             </div>
-                                            <h3>“Excellent</h3>
+                                            <h3>"Excellent</h3>
                                         </div>
                                         <div>
                                             <div class="rate">
@@ -773,7 +842,10 @@
                                                 </h5>
                                             </div>
                                             <div class="mt-15">
-                                               <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac leo!.</h6>
+                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur
+                                                    dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac
+                                                    leo!.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -792,7 +864,7 @@
                                                     <p>CEO & Founder</p>
                                                 </div>
                                             </div>
-                                            <h3>“Excellent</h3>
+                                            <h3>"Excellent</h3>
                                         </div>
                                         <div>
                                             <div class="rate">
@@ -807,7 +879,10 @@
                                                 </h5>
                                             </div>
                                             <div class="mt-15">
-                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac leo!.</h6>
+                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur
+                                                    dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac
+                                                    leo!.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -826,7 +901,7 @@
                                                     <p>CEO & Founder</p>
                                                 </div>
                                             </div>
-                                            <h3>“Excellent</h3>
+                                            <h3>"Excellent</h3>
                                         </div>
                                         <div>
                                             <div class="rate">
@@ -841,7 +916,10 @@
                                                 </h5>
                                             </div>
                                             <div class="mt-15">
-                                                <h6 class="fz-16">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac leo!.</h6>
+                                                <h6 class="fz-16">"Lorem sipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur
+                                                    dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac
+                                                    leo!.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -860,7 +938,7 @@
                                                     <p>CEO & Founder</p>
                                                 </div>
                                             </div>
-                                            <h3>“Excellent</h3>
+                                            <h3>"Excellent</h3>
                                         </div>
                                         <div>
                                             <div class="rate">
@@ -875,7 +953,10 @@
                                                 </h5>
                                             </div>
                                             <div class="mt-15">
-                                                 <h6 class="fz-16">"Lorem sipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac leo!.</h6>
+                                                <h6 class="fz-16">"Lorem sipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Nullam auctor, nulla ut vehicula dictum, justo elit efficitur
+                                                    dui, ut pretium purus erat at nisi. Curabitur bibendum sapien ac
+                                                    leo!.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -883,37 +964,13 @@
                             </div>
                         </div>
                         <div class="brands mt-100">
-                           
-                            <div class="row align-items-start">
-								<div class="col-6" style="margin:0px 0px 0px -20px;">
-									<h3>Our Certification and Partners</h3>
-								</div>
-                                <div class="col-6">
-                                    <div class="img" style="height:30px;width:230px;float:right;">
-                                        <img src="assets/imgs/brands/databrikss.png" alt="">
-                                    </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="brand-text">
+                                    <h3>Our Certification and Partners</h3>
                                 </div>
-                                
-                                <!--div class="col-lg-2 col-md-3 col-6">
-                                    <div class="img">
-                                        <img src="assets/imgs/brands/3.svg" alt="">
-                                    </div>
+                                <div class="img">
+                                    <img src="assets/imgs/brands/databrikss.png" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <div class="img">
-                                        <img src="assets/imgs/brands/4.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <div class="img">
-                                        <img src="assets/imgs/brands/5.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6">
-                                    <div class="img">
-                                        <img src="assets/imgs/brands/1.svg" alt="">
-                                    </div>
-                                </div-->
                             </div>
                         </div>
                     </div>
@@ -957,7 +1014,7 @@
                                     </div>
                                     <div class="cont mt-30">
                                         <h6>
-                                            <a href="#blog-details.html">We’re winner SOTY at CSS
+                                            <a href="#blog-details.html">We're winner SOTY at CSS
                                                 Award 2023</a>
                                         </h6>
                                     </div>
@@ -1038,13 +1095,14 @@
 
             <!-- ==================== Start Footer ==================== -->
 
-            <footer class="footer-sa pb-80">
+            <footer class="footer-sa pb-30">
                 <div class="container section-padding">
                     <div class="sec-head mb-80">
                         <div class="row">
                             <div class="col-lg-5">
                                 <a href="#" class="logo md-mb50">
-                                    <img src="assets/imgs/white_logo.svg" style="border:0px solid RED;height:100px;width:250px;" alt="">
+                                    <img src="assets/imgs/white_logo.svg"
+                                        style="border:0px solid RED;height:100px;width:250px;" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-6">
@@ -1059,29 +1117,29 @@
                             <div class="col">
                                 <div class="row">
                                     <div class="col-lg-5">
-                                           <div class="social-icon">
-													<a href="#0">
-														<i class="fa-brands fa-x-twitter"></i>
-													</a>
-													<a href="#0">
-														<i class="fa-brands fa-instagram"></i>
-													</a>
-													<a href="#0">
-														<i class="fa-brands fa-facebook"></i>
-													</a>
-													
-													<a href="#0">
-														<i class="fa-brands fa-linkedin"></i>
-													</a>
-											</div>
+                                        <div class="social-icon">
+                                            <a href="#0">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="#0">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="#0">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+
+                                            <a href="#0">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                        </div>
                                     </div>
-									<div class="col-lg-3">
+                                    <div class="col-lg-3">
                                         <div class="item">
-                                           <span class="sub-color">location</span>
+                                            <span class="sub-color">location</span>
                                             <p>5005 W Royal ln, Suite 252 Irving TX 75063.</p>
                                         </div>
                                     </div>
-									<div class="col-lg-4">
+                                    <div class="col-lg-4">
                                         <div class="item">
                                             <span class="sub-color">inquiry</span>
                                             <p>info@risamsoft.com</p>
@@ -1090,8 +1148,8 @@
                                     </div>
                                 </div>
                             </div>
-							
-							
+
+
                             <!--div class="col-lg-6 offset-lg-5">
                                 <div class="social-icon">
                                     <a href="#0">
@@ -1128,7 +1186,7 @@
                                     <a href="#portfolio-standard.html">About Us</a>
                                     <a href="#about.html">Our Services</a>
                                     <a href="#blog-standard.html">Careers</a>
-									<a href="#blog-standard.html">Contact Us</a>
+                                    <a href="#blog-standard.html">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -1158,7 +1216,8 @@
 
     <!-- plugins -->
     <script src="common/js/lib/plugins.js"></script>
-    <script src="../../../../cdn.jsdelivr.net/npm/swiper%4010/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+        integrity="sha256-1O3z9fIqkP9A4Ix35Z5v3WnZ7bX3F6KI1H8j+0Lp4w=" crossorigin="anonymous"></script>
 
     <!-- GSAP -->
     <script src="common/js/gsap_lib/gsap.min.js"></script>
@@ -1171,6 +1230,30 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
+
+    <!-- Scroll to Top Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            // Show button when user scrolls down 300px
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.add('show');
+                } else {
+                    scrollToTopButton.classList.remove('show');
+                }
+            });
+
+            // Scroll to top when button is clicked
+            scrollToTopButton.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 
