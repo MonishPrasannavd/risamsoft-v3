@@ -274,7 +274,7 @@
 .serv-ms .item {
   color: #fff;
   padding: 40px;
-  height: 100vh;
+  height: 80vh;
   min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,7 +332,8 @@
 }
 
 .services-ms {
-  background: #0D0D0D;
+  /* background: #0D0D0D; */
+  background: #003952;
   position: relative;
   overflow: hidden;
 }
@@ -360,10 +361,13 @@
 }
 
 .services-ms .item {
-  background: #141414;
+  /* background: #141414 */
+  background: #0877A8;
   border-radius: 10px;
   padding: 50px 30px;
   margin-top: 30px;
+  height: 100vh;
+  max-height: 430px;
 }
 
 .services-ms .item .arrow {
@@ -498,7 +502,8 @@
 }
 
 .testim-sm .swiper-slide-active .item {
-  background: #0D0D0D;
+  /* background: #0D0D0D; */
+  background-color: #0877A8;
   color: #fff;
 }
 .testim-sm .brands{
@@ -628,7 +633,8 @@
 
 /* --------------- footer --------------- */
 .footer-sa {
-  background: #0D0D0D;
+  /* background: #0D0D0D; */
+  background: #003952;
   color: #fff;
 }
 
@@ -766,7 +772,8 @@ p {
 }
 
 .loader-wrap svg {
-  fill: #1d1d1d;
+  /* fill: #1d1d1d; */
+  fill: #003952;
 }
 
 .butn.butn-bord {
@@ -815,7 +822,9 @@ p {
   margin: 10px 0;
   line-height:25px;
 }
-
+.award-img{
+  width: 80%;
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
   .header-ms {
@@ -918,5 +927,14 @@ p {
 
   .hero-ms .qoutes .text {
     margin: 15px 0 0 0 !important;
+  }
+  .navbar .topnav .butn{
+    display: none;
+  }
+  .award-img{
+    width: 50%;
+  }
+  .mt-sm-100{
+    margin-top: 30px !important;
   }
 }
