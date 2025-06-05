@@ -30,6 +30,52 @@
     <link rel="stylesheet" href="assets/css/inner_pages.css">
 
 </head>
+<style>
+  /* Scroll to Top Button Styles */
+    .scroll-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+        background-color: #1567F5;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+    }
+
+    .scroll-to-top.show {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .scroll-to-top:hover {
+        background-color: #333;
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        .scroll-to-top {
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+</style>
 
 <body>
 
@@ -59,7 +105,9 @@
 
 
     <div class="cursor"></div>
-
+	<button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- ==================== Start progress-scroll-button ==================== -->
 
@@ -301,7 +349,7 @@
                                                 <div class="d-flex">
                                                     <span class="text">Learn More</span>
                                                     <span class="icon">
-                                                        <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
+                                                        <img src="common/imgs/icons/arrow-top-right.svg" alt="">
                                                     </span>
                                                 </div>
                                             </a>
@@ -320,7 +368,7 @@
                                                 <p>Brand Identity, Stragegy & Consult, <br> Position, Rebrand</p>
                                                 <div>
                                                     <div class="icon invert">
-                                                        <img src="../common/imgs/icons/crown-solid.svg" alt="">
+                                                        <img src="common/imgs/icons/crown-solid.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -335,7 +383,7 @@
                                                 <p>Brand Identity, Stragegy & Consult, <br> Position, Rebrand</p>
                                                 <div>
                                                     <div class="icon invert">
-                                                        <img src="../common/imgs/icons/bezier-curve-solid.svg" alt="">
+                                                        <img src="common/imgs/icons/bezier-curve-solid.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -350,7 +398,7 @@
                                                 <p>Brand Identity, Stragegy & Consult, <br> Position, Rebrand</p>
                                                 <div>
                                                     <div class="icon invert">
-                                                        <img src="../common/imgs/icons/code-solid.svg" alt="">
+                                                        <img src="common/imgs/icons/code-solid.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -365,7 +413,7 @@
                                                 <p>Brand Identity, Stragegy & Consult, <br> Position, Rebrand</p>
                                                 <div>
                                                     <div class="icon invert">
-                                                        <img src="../common/imgs/icons/chart-line-solid.svg" alt="">
+                                                        <img src="common/imgs/icons/chart-line-solid.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -930,15 +978,6 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
     <!-- jQuery -->
     <script src="common/js/lib/jquery-3.6.0.min.js"></script>
     <script src="common/js/lib/jquery-migrate-3.4.0.min.js"></script>
@@ -959,6 +998,31 @@
 
     <!-- custom scripts -->
     <script src="assets/js/inner_pages.js"></script>
+	
+	  <!-- Scroll to Top Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            // Show button when user scrolls down 300px
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.add('show');
+                } else {
+                    scrollToTopButton.classList.remove('show');
+                }
+            });
+
+            // Scroll to top when button is clicked
+            scrollToTopButton.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 
 </body>
 
