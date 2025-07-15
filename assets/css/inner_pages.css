@@ -1847,8 +1847,12 @@ h6 {
   font-size: 22px; }
 
 .sub-bg {
-  background: var(--bg-color); }
+  background: var(--bg-color); 
+}  
 
+.sub-bg-about {
+     background: #003952;
+  }
 .main-color {
   color: var(--main-color); }
 
@@ -1898,8 +1902,11 @@ p {
 .text-indent {
   text-indent: 20%; }
 
+/*for about page*/
 .loader-wrap svg {
-  fill: #1d1d1d; }
+  /*fill: #1d1d1d; */
+   fill: #003952;
+  }
 
 .crv-butn span {
   background: var(--main-color);
