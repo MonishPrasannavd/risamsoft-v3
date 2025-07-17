@@ -756,7 +756,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 7px 25px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 0px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
 

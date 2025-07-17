@@ -2,9 +2,15 @@
 /* ========= [ * inner pages ]  =========*/
 :root {
   --bg-color: #18191b;
-  --theme-color: #0e0f11;
+ /* --theme-color: #0e0f11;  OLD THEME COLOUR*/
+   --theme-color: #0e0f11;
   --main-color: #d0ff71; }
 
+/*
+:root {
+  --bg-color: #18191b;
+  --theme-color: #0e0f11;
+  --main-color: #d0ff71; }*/
 /* --------------- Menu --------------- */
 .navbar {
   position: absolute;
@@ -375,6 +381,14 @@
       background: #BBBBBB; }
       .testimonials-ds .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background: var(--main-color); }
+
+
+
+.certication-sm .brands-certi{
+/* border: 1px solid BLUE;*/
+}
+
+
 
 .clients-ds .item {
   position: relative;
@@ -1853,6 +1867,11 @@ h6 {
 .sub-bg-about {
      background: #003952;
   }
+  
+  .sub-bg-testimonials {
+     background: #0877A8;
+  }
+  
 .main-color {
   color: var(--main-color); }
 
