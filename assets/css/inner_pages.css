@@ -6,6 +6,8 @@
    --theme-color: #003952;
   --main-color: #d0ff71; }
 
+
+
 /*
 :root {
   --bg-color: #18191b;
@@ -116,6 +118,13 @@
     .services-dm .item .title h2 {
       font-size: 100px;
       letter-spacing: -4px; }
+	  
+	.services-dm .item .title h5 {
+      font-size: 46px;
+      line-height:1.1;
+	  }
+	  
+	  
     .services-dm .item p {
       opacity: 0;
       -webkit-transition: all .4s;
@@ -384,8 +393,20 @@
 
 
 
-.certication-sm .brands-certi{
-/* border: 1px solid BLUE;*/
+.certication-sm{
+background-color:#003952;
+border: 1px solid rgba(0, 0, 0, 0.1);
+margin:100px 0px 0px 0px;
+height:100px;
+}
+.certication-sm .brands-certi .brand-text h3{
+	color:#fff;
+	font-size: 44px;
+	font-weight:300;
+	
+}
+.certication-sm .certi-img{
+	width:300px;
 }
 
 
@@ -1779,7 +1800,7 @@
     width: 210px;
     height: 210px;
     border-radius: 50%;
-    background: var(--main-color);
+    background:#007aff;
     position: absolute;
     top: -80px;
     right: 8%;
