@@ -589,10 +589,12 @@ height:100px;
       font-size: 18px; }
     .services-cst .item .title {
       text-align: center;
-      position: relative; }
+      position: relative; 
+	    
+	  }
       .services-cst .item .title h2 {
-        font-size: 90px;
-        font-weight: 500;
+        font-size: 62px;
+        font-weight: 600;
         white-space: nowrap;
         line-height: 1;
         letter-spacing: -4px; }
