@@ -76,6 +76,47 @@
             font-size: 18px;
         }
     }
+
+.job-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.job-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.job-buttons a {
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Consistent hover effect for all buttons */
+.butn:hover,
+.job-buttons a:hover {
+  background-color: #ffda44 !important; /* yellow highlight */
+  color: #000 !important;               /* black text */
+  border-color: #ffda44 !important;     /* yellow border */
+}
+
+.butn:hover .icon img,
+.job-buttons a:hover .icon img {
+  filter: invert(1); /* makes arrow/icon visible on yellow */
+}
+
+
 </style>
 <body>
 
@@ -287,122 +328,109 @@
 
                 <!-- ==================== Start Pricing ==================== -->
 
-                <section class="pricing-pg section-padding">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="item md-mb50">
-                                    <div class="head text-center pb-40 bord-thin-bottom-light">
-                                        <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-                                        <!--h2 class="fz-70 mb-5">$9.99</h2-->
-                                        <span class="sub-color">Multiple locations in United States Of America (USA)</span>
-                                    </div>
-                                    <!--div class="list mt-40">
-                                        <ul class="rest">
-                                            <li>Adipiscing elit sed do.</li>
-                                            <li>Eusmod tempor incididunt ut.</li>
-                                            <li>labore et dolore magna.</li>
-                                        </ul>
-                                    </div-->
-                                    <div class="text-center mt-40" style="border:2px solid RED;width:100px;">
-                                        <a href="#0" class="butn butn-md butn-bord butn-rounded" style="display: inline-block; width: auto;">
-                                            <div class="d-flex align-items-left">
-                                                <span>Job Description </span>
-                                                <span class="icon invert ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
-                                                </span>
-                                            </div>
-                                        </a>
-										
-										<a href="#0" class="butn butn-md butn-bord butn-rounded" style="display: inline-block; width: auto;">
-                                            <div class="d-flex align-items-center">
-                                                <span>Job Description1 </span>
-                                                <span class="icon invert ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
-                                                </span>
-                                            </div>
-                                        </a>
-										
-										
-                                    </div>
-									<div class="card-item">
-                                <div class="img fit-img">
-                                   
-                                    <div class="tags">
-                                        <a style="border: 2px solid rgba(255, 255, 255, 0.1);border-radius: 30px;font-size:24px;" href="#0">Job Description</a>
-                                        <a style="border: 2px solid rgba(255, 255, 255, 0.1);border-radius: 30px;font-size:24px;" href="#0">Apply Now</a>
-                                       
-                                    </div>
-                                   
-                                </div>
-                            </div>
-									 <div class="text-center mt-40" style="border:2px solid RED;width:100px;">
-                                        <a href="#0" class="butn butn-md butn-bord butn-rounded" style="display: inline-block; width: auto;">
-                                            <div class="d-flex align-items-center">
-                                                <span>Apply Soon</span>
-                                                <span class="icon invert ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="item md-mb50">
-                                    <div class="head text-center pb-40 bord-thin-bottom-light">
-                                        <h6 class="text-u fz-20 mb-40">Software Developer/Analyst</h6>
-                                        <!--h2 class="fz-70 mb-5">$29.99</h2-->
-                                        <span class="sub-color">Multiple locations in United States Of America (USA)</span>
-                                    </div>
-                                    <!--div class="list mt-40">
-                                        <ul class="rest">
-                                            <li>Adipiscing elit sed do.</li>
-                                            <li>Eusmod tempor incididunt ut.</li>
-                                            <li>labore et dolore magna.</li>
-                                        </ul>
-                                    </div-->
-                                    <div class="text-center mt-40">
-                                        <a href="#0" class="butn butn-md butn-bord butn-rounded">
-                                            <div class="d-flex align-items-center">
-                                                <span>Get Started</span>
-                                                <span class="icon invert ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="item">
-                                    <div class="head text-center pb-40 bord-thin-bottom-light">
-                                        <h6 class="text-u fz-20 mb-40">Premium pack</h6>
-                                        <h2 class="fz-70 mb-5">$49.99</h2>
-                                        <span class="sub-color">Per Month</span>
-                                    </div>
-                                    <!--div class="list mt-40">
-                                        <ul class="rest">
-                                            <li>Adipiscing elit sed do.</li>
-                                            <li>Eusmod tempor incididunt ut.</li>
-                                            <li>labore et dolore magna.</li>
-                                        </ul>
-                                    </div-->
-                                    <div class="text-center mt-40">
-                                        <a href="#0" class="butn butn-md butn-bord butn-rounded">
-                                            <div class="d-flex align-items-center">
-                                                <span>Get Started</span>
-                                                <span class="icon invert ml-10">
-                                                    <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
-                                                </span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
+<section class="careers section-padding">
+  <div class="container">
+    <div class="row" style="border:0px solid RED;">
+
+      <!-- Job 1 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+	
+  </div>
+  
+  
+  
+  <div class="container" style="margin-top:50px;">
+    <div class="row" style="border:2px solid BLUE;">
+
+      <!-- Job 1 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="col-lg-4">
+        <div class="job-card">
+          <div class="head text-center pb-40 bord-thin-bottom-light">
+            <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
+            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+          </div>
+          <div class="job-buttons mt-40 text-center">
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+	
+  </div>
+</section>
+
 
                 <!-- ==================== End Pricing ==================== -->
 
