@@ -116,6 +116,13 @@
   filter: invert(1); /* makes arrow/icon visible on yellow */
 }
 
+.job-desc-content {
+  max-height: 80vh;   /* limits height to 80% of screen */
+  overflow-y: auto;   /* adds scroll when content is taller */
+  margin: 40px auto;
+  background: #111;
+  border-radius: 12px;
+}
 
 </style>
 <body>
@@ -212,6 +219,19 @@
 
     <div class="hamenu">
         <div class="close-menu cursor-pointer ti-close"></div>
+		<!-- Job Description Overlay (hidden by default) -->
+				<div class="job-desc-content" style="display:none; width:100%; height:100%;color:#fff; padding:40px; position:relative;">
+				<span class="close-btn" style="position:absolute;top:20px;right:30px;font-size:30px;cursor:pointer;">&times;</span>
+					<button class="back-to-menu cursor-pointer">← Back</button>
+				  <h2 id="job-title"></h2>
+				  <p id="job-location"></p>
+				  <div id="job-description" style="margin:18px 0;"></div>
+  
+				</div>
+
+		
+		
+		
         <div class="container-fluid rest d-flex">
             <div class="menu-links">
                 <ul class="main-menu rest">
@@ -278,7 +298,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="cont-info valign">
+            <!--div class="cont-info valign">
                 <div class="text-center full-width">
                     <div class="logo">
                         <img src="common/imgs/Logo-light.svg" alt="">
@@ -297,7 +317,7 @@
                         <h5 class="underline"><a href="#0">+1 (469) 524-3401</a></h5>
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 
@@ -337,11 +357,18 @@
       <div class="col-lg-4">
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
-            <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <h6 class="text-u fz-20 mb-40">Technical Delivery Manager1</h6>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
-            <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+            <a href="#0" 
+				   class="butn butn-md butn-bord butn-rounded job-btn"
+				   data-title="Technical Delivery Managernew"
+				  
+				   data-desc-id="job1-desc">
+				  
+				   Job Description
+			</a>
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
           </div>
         </div>
@@ -352,7 +379,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -366,7 +393,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -389,7 +416,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -403,7 +430,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -417,7 +444,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -438,7 +465,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -452,7 +479,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -466,7 +493,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -489,7 +516,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -503,7 +530,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -517,7 +544,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -539,7 +566,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Technical Delivery Manager</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -553,7 +580,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Software Developer / Analyst</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -567,7 +594,7 @@
         <div class="job-card">
           <div class="head text-center pb-40 bord-thin-bottom-light">
             <h6 class="text-u fz-20 mb-40">Quality Assurance Engineer</h6>
-            <span class="sub-color">Multiple locations in United States Of America (USA)</span>
+            <span class="sub-color"> United States Of America (USA)</span>
           </div>
           <div class="job-buttons mt-40 text-center">
             <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
@@ -702,7 +729,64 @@
     </div>
 
 
+				<div id="job1-desc" style="display:none;">
 
+					<h5 style="font-weight: bold;">
+						Technical Delivery Manager
+					</h5>
+					<h6 class="mt-2 fw-bold" style="font-weight:bold;"><b>Role Overview:</b></h6>
+					<p style="font-size: 15px;">
+					We are seeking an experienced Technical Delivery Manager to lead and oversee the team while managing overall project delivery.
+					The ideal candidate will have a proven track record of aligning cross-functional teams, increasing efficiency,
+					and driving significant business growth. This role requires strong leadership, project management skills, and
+					the ability to collaborate with diverse teams.
+					</p>
+					<h6 class="mt-2 fw-bold" style="font-weight:bold;">Responsibilities:</h6>
+					<ul>
+						<li>
+							Lead and manage the team, production departments to optimize efficiency and reduce errors.
+						</li>
+						<li>
+							Manage the team to boost productivity and effectiveness.
+						</li>
+						<li>
+							Develop and execute delivery plans to expand into new projects.
+						</li>
+						<li>
+						   Identify product gaps and collaborate with Agile development teams to design solutions that eliminate
+						   competitive disadvantages.
+
+						</li>
+						<li>
+							Emphasizing competitive advantages for the end clients and stake holders.
+						</li>
+						<li>
+							Forge strategic alliances by initiating and developing new Tech-partner relationships.
+						</li>
+						<li>
+						   Implement and track project gating processes and risks, ensuring timely and cost-effective project delivery.
+						</li>
+						<li>
+						   Mentor and guide teams on process improvements, streamlining the system development life cycle.
+						</li>
+
+					</ul>
+					<h6 class="mt-2 fw-bold" style="font-weight:bold;"><b>Qualifications and Skills Required:</b></h6>
+					<ul>
+						<li>
+						   Proven experience in leadership and operational management within a technical environment.
+						</li>
+						<li>
+							Strong project management skills including risk management.
+						</li>
+						<li>
+							Ability to lead diverse teams and collaborate across departments.
+						</li>
+						<li>
+							PMP certification or equivalent experience is a plus.
+						</li>
+					</ul>
+				</div>
 
 
 
@@ -753,6 +837,53 @@
             });
         });
     </script>
+	
+	
+	<script>
+$(document).on('click', '.job-btn', function (e) {
+  e.preventDefault();
+
+  let $btn = $(this);
+  let title = $btn.data('title');
+  let location = $btn.data('location');
+ // let desc = $btn.data('desc');
+  let reqs = $btn.data('requirements') ? $btn.data('requirements').split(';') : [];
+  let apply = $btn.data('apply');
+
+  // Fill in content
+  $('#job-title').text(title);
+  $('#job-location').text(location);
+  
+  
+   // ✅ Load HTML from hidden div
+  let descId = $btn.data('desc-id');
+   if (descId) {
+    $('#job-description').html($('#' + descId).html());
+  }
+
+
+ // $('#job-description').text(desc);
+
+  let $reqList = $('#job-requirements').empty();
+  reqs.forEach(r => $reqList.append('<li>' + r + '</li>'));
+
+  $('#apply-link').attr('href', apply);
+
+  // Show overlay with job details
+  $('.menu-links').hide();
+  $('.job-desc-content').show();
+  $('.hamenu').addClass("open").animate({ left: 0 });
+});
+
+// Close overlay and return to menu
+$(document).on('click', '.close-btn, .back-to-menu, .hamenu .close-menu', function () {
+  $('.job-desc-content').hide();
+  $('.menu-links').show();
+  $('.hamenu').removeClass("open").delay(300).animate({ left: "-100%" });
+});
+
+</script>
+
 
 </body>
 

@@ -76,6 +76,37 @@
             font-size: 18px;
         }
     }
+
+.job-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top:30px;
+}
+
+.job-buttons a {
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Hover effect same as careers.html */
+.job-buttons a:hover {
+  background-color: #ffda44 !important;
+  color: #000 !important;
+  border-color: #ffda44 !important;
+}
+
+.job-desc {
+  display: block;
+  margin-top: 12px;
+  margin-left: 45px;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  color: #ccc;  /* softer gray so it doesn’t compete with title */
+  max-width: 90%; /* keeps it from touching buttons */
+}
+
 </style>
 
 <body>
@@ -344,141 +375,326 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item mb-10">
-                            <div class="d-flex">
-                                <!--div>
-                                    <div class="img fit-img">
-                                        <img src="assets/imgs/about/team/1.png" alt="">
-                                    </div>
-                                </div-->
-                                <div class="cont">
-                                    <h2>Technical Delivery Manager</h2>
-                                    <span>Multiple locations in United States Of America (USA)</span>
-                                </div>
-                                <div class="ml-auto">
-                                    <div class="social-icon">
-                                        <a href="#0">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-dribbble"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-behance"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-10">
-                            <div class="d-flex">
-                                <!--div>
-                                    <div class="img fit-img">
-                                        <img src="assets/imgs/about/team/2.png" alt="">
-                                    </div>
-                                </div-->
-                                <div class="cont">
-                                    <h2>Software Developer/Analyst</h2>
-                                    <span>Multiple locations in United States Of America (USA)</span>
-                                </div>
-                                <div class="ml-auto">
-                                    <div class="social-icon">
-                                        <a href="#0">
-                                            job<i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#0">
-                                           apply<i class="fa-brands fa-instagram"></i>
-                                        </a>
-										<a class="btn btn-primary" href="#" role="button">Link</a>
-                                    </div>
-                                </div>
-								<a class="btn btn-primary" href="#" role="button">Link</a>
-                            </div>
-                        </div>
-                        <div class="item mb-10">
-                            <div class="d-flex">
-                                <!--div>
-                                    <div class="img fit-img">
-                                        <img src="assets/imgs/about/team/3.png" alt="">
-                                    </div>
-                                </div-->
-                                <div class="cont">
-                                    <h2>Cloud & Data Engineer (Programmer Analyst)</h2>
-                                    <span>Multiple locations in United States Of America (USA)</span>
-                                </div>
-                                <div class="ml-auto">
-                                    <div class="social-icon">
-                                        <a href="#0">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-dribbble"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-behance"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                   
+					
+					<div class="item mb-10">
+						  <div class="d-flex">
+							<div class="cont">
+							  <h2>Technical Delivery Manager</h2>
+							  <span>Multiple locations in United States Of America (USA)</span>
+							</div>
+							<div class="ml-auto">
+							  <div class="job-buttons">
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+							  </div>
+							</div>
+						  </div>
+						  <!-- description outside flex row -->
+						  <div class="job-desc mt-20">
+							<span>
+							  We are seeking an experienced Technical Delivery Manager to lead and oversee the team while managing overall project delivery. 
+							  The ideal candidate will have a proven track record of aligning cross-functional teams, increasing efficiency, 
+							  and driving significant business growth. This role requires strong leadership, project management skills, 
+							  and the ability to collaborate with diverse teams.
+							</span>
+						  </div>
+					</div>
+
+
+					<div class="item mb-10">
+						  <div class="d-flex">
+							<div class="cont">
+							  <h2>Software Developer/Analyst</h2>
+							  <span>Multiple locations in United States Of America (USA)</span>
+							</div>
+							<div class="ml-auto">
+							  <div class="job-buttons">
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+							  </div>
+							</div>
+						  </div>
+						  <!-- description outside flex row -->
+						  <div class="job-desc mt-20">
+							<span>
+							  We are looking for a Master’s degree and 6 months of experience, Employer will accept a Bachelor’s degree or foreign equivalency in Computer Science or Electronics Engineering or foreign equivalent and 5 years of progressive experience.
+							</span>
+						  </div>
+					</div>
+					<div class="item mb-10">
+						 <div class="d-flex">
+							<div class="cont">
+							  <h2>Cloud & Data Engineer (Programmer Analyst)</h2>
+							  <span>Multiple locations in United States Of America (USA)</span>
+							</div>
+							<div class="ml-auto">
+							  <div class="job-buttons">
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+								<a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+							  </div>
+							</div>
+						  </div>
+						  <!-- description outside flex row -->
+						  <div class="job-desc mt-20">
+							<span>
+							 We are looking for a talented Cloud & Data Engineer with 4+ years of experience to join our team. In this role, you will be responsible for designing and implementing end-to-end data solutions using AWS technology and managing and implementing cloud solutions across various platforms, primarily focusing on AWS.
+							</span>
+						  </div>
+					</div>
 						
-                        <div class="item">
-                            <div class="d-flex">
-                                <!--div>
-                                    <div class="img fit-img">
-                                        <img src="assets/imgs/about/team/4.png" alt="">
-                                    </div>
-                                </div-->
-                                <div class="cont">
-                                    <h2>AI/ML and Data Scientist</h2>
-                                    <span>Multiple locations in United States Of America (USA)</span>
-                                </div>
-                                <div class="ml-auto">
-                                    <div class="social-icon">
-                                        <a href="#0">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-dribbble"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-behance"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="item mb-10">
+							  <div class="d-flex">
+								<div class="cont">
+								  <h2>AI/ML and Data Scientist</h2>
+								  <span>Multiple locations in United States Of America (USA)</span>
+								</div>
+								<div class="ml-auto">
+								  <div class="job-buttons">
+									<a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+									<a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+								  </div>
+								</div>
+							  </div>
+							  <!-- description outside flex row -->
+							  <div class="job-desc mt-20">
+								<span>
+								 We are looking for a highly motivated and talented AI/ML and Data Scientist with 4+ years of experience to join our team. In this role, you will be responsible for the entire data science lifecycle, from data acquisition and preprocessing to model development, deployment, and monitoring. You will collaborate closely with cross-functional teams to develop AI-powered solutions that solve real-world business problems and contribute to organizational growth.
+								</span>
+							  </div>
+						</div>
 						
 						<div class="item mb-10">
                             <div class="d-flex">
-                                <!--div>
-                                    <div class="img fit-img">
-                                        <img src="assets/imgs/about/team/3.png" alt="">
-                                    </div>
-                                </div-->
                                 <div class="cont">
-                                    <h2>Application Programmer-I (Full Stack)</h2>
-                                    <span>Multiple locations in United States Of America (USA)</span>
+                                <h2>Application Programmer-I (Full Stack)</h2>
+                                <span>Multiple locations in United States Of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
-                                    <div class="social-icon">
-                                        <a href="#0">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-dribbble"></i>
-                                        </a>
-                                        <a href="#0">
-                                            <i class="fa-brands fa-behance"></i>
-                                        </a>
-                                    </div>
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
                                 </div>
                             </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                Join our dynamic team as an Application Programmer and play a pivotal role in crafting innovative and scalable web applications. You'll leverage your expertise in Java or JavaScript frameworks to develop and maintain high-performance solutions, collaborating closely with cross-functional teams to translate user needs into tangible results. This role offers a rewarding opportunity to contribute to cutting-edge projects and shape the future of our technology landscape.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Application Programmer-II (.Net/Python)</h2>
+                                <span>Multiple locations in United States Of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                We’re seeking for .Net and Python developers to join our dynamic team, this role involves developing server-side logic, ensuring high performance and responsiveness to front-end requests, and integrating frontend elements into the application.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Mobile Application Developer</h2>
+                                <span>Multiple locations in United States Of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                We're seeking a dynamic Mobile Application Developer with a deep passion for crafting exceptional mobile experiences through native code and a keen interest in exploring cross-platform solutions like React Native and Flutter. This role is for a developer who excels in creating robust, native applications for iOS and Android and is good at leveraging React Native or Flutter to produce high-quality, cross-platform apps.
+                                </span>
+                            </div>
+                            </div>
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Automation Testing / Analyst</h2>
+                                <span>Multiple locations in United States Of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                We are looking for 4 + years of experience as a Software Automation Testing Engineer to join us, driving the transformation of testing into an efficient end-to-end quality engineering function. Your role involves designing, developing, and executing automated test scripts to ensure software reliability and quality.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Automation Testing / Analyst</h2>
+                                <span>Multiple locations in United States Of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                We are looking for 4 + years of experience as a Software Automation Testing Engineer to join us, driving the transformation of testing into an efficient end-to-end quality engineering function. Your role involves designing, developing, and executing automated test scripts to ensure software reliability and quality.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Software Developer/Analyst (Multiple Openings)</h2>
+                                <span>Location : Irving, TX.</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                Create, modify, and test the code and scripts that allow computer applications to run.
+                                Work from specifications drawn up by software and web developers or other individuals.
+                                May develop and write computer programs to store, locate, and retrieve specific documents, data, and information.
+                                Mail Resume to: Risamsoft Inc., 5005 W Royal Ln Suite 148 Irving, TX 75063
+                                </span>
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Java Developer</h2>
+                                <span>United States of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                You will be involved in the full development lifecycle of the server components from architecture and design to deployment and integration with other services and partner products.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Google Cloud Platform Engineer</h2>
+                                <span>United States of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                Looking for someone who has Google Kubernetes Experience (GKE) to configure, deploy, maintain and support web applications, microservices, and etc. Ideally looking for someone who is a GCP cloud.
+                                </span>
+                            </div>
+                            </div>
+
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Senior Scrum Master</h2>
+                                <span>United States of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                Looking for a Senior Scrum Master with working knowledge of agile methodology, techniques, and frameworks, such as Scrum or Kanban, to deliver solutions. Strong analytical and problem-solving skills is a must.
+                                </span>
+                            </div>
+                            </div>
+
+
+                            <div class="item mb-10">
+                            <div class="d-flex">
+                                <div class="cont">
+                                <h2>Aws Database Engineer</h2>
+                                <span>United States of America (USA)</span>
+                                </div>
+                                <div class="ml-auto">
+                                <div class="job-buttons">
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- description outside flex row -->
+                            <div class="job-desc mt-20">
+                                <span>
+                                The Database Engineering team is looking for a Senior AWS Database Engineer with a strong database background. Working knowledge of Linux/Windows administration, automated deployments, scripting (Bash/PowerShell/Python ).
+                                </span>
+                            </div>
                         </div>
-						
                     </div>
                 </div>
 
@@ -649,21 +865,10 @@
                             <div class="col">
                                 <div class="row">
                                     <div class="col-lg-5">
-                                        <div class="social-icon">
-                                            <a href="#0">
-                                                <i class="fa-brands fa-x-twitter"></i>
-                                            </a>
-                                            <a href="#0">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                            <a href="#0">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-
-                                            <a href="#0">
-                                                <i class="fa-brands fa-linkedin"></i>
-                                            </a>
-                                        </div>
+                                        <div class="job-buttons">
+  <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+  <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+</div>
                                     </div>
                                     <div class="col-lg-3 mt-sm-100">
                                         <div class="item">
@@ -683,23 +888,10 @@
 
 
                             <!--div class="col-lg-6 offset-lg-5">
-                                <div class="social-icon">
-                                    <a href="#0">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-behance"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-                                </div>
+                                <div class="job-buttons">
+  <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+  <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+</div>
                             </div-->
                         </div>
                     </div>
