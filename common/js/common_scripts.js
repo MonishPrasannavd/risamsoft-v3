@@ -89,13 +89,34 @@ $(function () {
         window.scrollTo(0, 0);
     }
 
+     $('.team-mp .tech-job').on('click', function () {
+		
+
+        $('.hamenujob').addClass("open");
+
+        $('.hamenujob').animate({ left: 0 });
+
+    }); 
+	
+	
+	 $('.hamenujob .close-menu').on('click', function () {
+
+        $('.hamenujob').removeClass("open").delay(300).animate({ left: "-100%" });
+       
+
+    });
+	
+	
+	//-----------------------------------------//
     $('.navbar .menu-icon').on('click', function () {
+		//alert('hello');
 
         $('.hamenu').addClass("open");
 
         $('.hamenu').animate({ left: 0 });
 
     });
+	
 
     $('.hamenu .close-menu, .one-scroll .menu-links .main-menu > li').on('click', function () {
 
