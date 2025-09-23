@@ -35,6 +35,10 @@
 
 </head>
 <style>
+
+body.no-scroll {
+  overflow: hidden;
+}
   /* Scroll to Top Button Styles */
     .scroll-to-top {
         position: fixed;
@@ -80,12 +84,6 @@
         }
     }
 
-.job-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top:30px;
-}
 
 .job-buttons a {
   min-width: 140px;
@@ -212,6 +210,7 @@ border-color: #ffda44;
   height: 100%;
   z-index: 2000;
   display: none; /* hidden by default */
+  padding: 60px 40px;
 }
 
 /* job description content */
@@ -220,6 +219,7 @@ border-color: #ffda44;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .job-desc-content h4 {
@@ -228,6 +228,7 @@ border-color: #ffda44;
   margin-top: 25px;
   margin-bottom: 10px;
   color: #ffffff;
+  letter-spacing:2px;
 }
 
 .job-desc-content p {
@@ -275,6 +276,48 @@ left: 0;
 .hamenujob p {
 	margin-bottom: 20px;
 }
+
+
+.cont {
+  margin:-18px 0px 0px -23px;      /* reset margin */
+  padding-left: 10px;  /* small padding so it doesn’t stick to edge */
+}
+
+
+.cont h4 {
+  font-size: 20px;
+  font-weight: 500;   /* lighter, less bold */
+  color: #fff;        /* or #222 if background is light */
+  margin-bottom: 5px;	
+  word-spacing: 4px;
+  letter-spacing: 2px;
+}
+
+.cont span {
+  font-size: 14px;
+  color: #aaa;   /* softer gray */
+  display: block;
+  margin-top: 4px;
+  margin-bottom:5px;
+}
+
+.job-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 11px;
+  margin-right: 20px;   /* push buttons away from right edge */
+}
+
+.job-buttons a {
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+
+
 </style>
 
 <body>
@@ -369,7 +412,7 @@ left: 0;
             </div>
         </div>
     </nav>
-    <div class="hamenu" style="border:2px solid RED;">
+    <div class="hamenu">
         <div class="close-menu cursor-pointer ti-close"></div>
         <div class="container-fluid rest d-flex">
             <div class="menu-links">
@@ -587,15 +630,7 @@ left: 0;
 							  </div>
 							</div>
 						  </div>
-						  <!-- description outside flex row -->
-						  <!--div class="job-desc mt-20">
-							<span>
-							  We are seeking an experienced Technical Delivery Manager to lead and oversee the team while managing overall project delivery. 
-							  The ideal candidate will have a proven track record of aligning cross-functional teams, increasing efficiency, 
-							  and driving significant business growth. This role requires strong leadership, project management skills, 
-							  and the ability to collaborate with diverse teams.
-							</span>
-						  </div-->
+						  
 					</div>
 
 
@@ -633,17 +668,12 @@ left: 0;
 							  </div>
 							</div>
 						  </div>
-						  <!-- description outside flex row -->
-						  <!--div class="job-desc mt-20">
-							<span>
-							  We are looking for a Master’s degree and 6 months of experience, Employer will accept a Bachelor’s degree or foreign equivalency in Computer Science or Electronics Engineering or foreign equivalent and 5 years of progressive experience.
-							</span>
-						  </div-->
+						
 					</div>
 					<div class="item mb-10">
 						 <div class="d-flex">
 							<div class="cont">
-							  <h2>Cloud & Data Engineer (Programmer Analyst)</h2>
+							  <h4>Cloud & Data Engineer (Programmer Analyst)</h4>
 							  <span>Multiple locations in United States Of America (USA)</span>
 							</div>
 							<div class="ml-auto">
@@ -690,18 +720,13 @@ left: 0;
 							  </div>
 							</div>
 						  </div>
-						  <!-- description outside flex row -->
-						  <!--div class="job-desc mt-20">
-							<span>
-							 We are looking for a talented Cloud & Data Engineer with 4+ years of experience to join our team. In this role, you will be responsible for designing and implementing end-to-end data solutions using AWS technology and managing and implementing cloud solutions across various platforms, primarily focusing on AWS.
-							</span>
-						  </div-->
+						 
 					</div>
 						
                         <div class="item mb-10">
 							  <div class="d-flex">
 								<div class="cont">
-								  <h2>AI/ML and Data Scientist</h2>
+								  <h4>AI/ML and Data Scientist</h4>
 								  <span>Multiple locations in United States Of America (USA)</span>
 								</div>
 								<div class="ml-auto">
@@ -747,18 +772,13 @@ left: 0;
 								  </div>
 								</div>
 							  </div>
-							  <!-- description outside flex row -->
-							  <!--div class="job-desc mt-20">
-								<span>
-								 We are looking for a highly motivated and talented AI/ML and Data Scientist with 4+ years of experience to join our team. In this role, you will be responsible for the entire data science lifecycle, from data acquisition and preprocessing to model development, deployment, and monitoring. You will collaborate closely with cross-functional teams to develop AI-powered solutions that solve real-world business problems and contribute to organizational growth.
-								</span>
-							  </div-->
+							 
 						</div>
 						
 						<div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Application Programmer-I (Full Stack)</h2>
+                                <h4>Application Programmer-I (Full Stack)</h4>
                                 <span>Multiple locations in United States Of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
@@ -806,12 +826,7 @@ left: 0;
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                Join our dynamic team as an Application Programmer and play a pivotal role in crafting innovative and scalable web applications. You'll leverage your expertise in Java or JavaScript frameworks to develop and maintain high-performance solutions, collaborating closely with cross-functional teams to translate user needs into tangible results. This role offers a rewarding opportunity to contribute to cutting-edge projects and shape the future of our technology landscape.
-                                </span>
-                            </div-->
+                        
                             </div>
 
 
@@ -819,7 +834,7 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Application Programmer-II (.Net/Python)</h2>
+                                <h4>Application Programmer-II (.Net/Python)</h4>
                                 <span>Multiple locations in United States Of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
@@ -864,12 +879,7 @@ left: 0;
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                We’re seeking for .Net and Python developers to join our dynamic team, this role involves developing server-side logic, ensuring high performance and responsiveness to front-end requests, and integrating frontend elements into the application.
-                                </span>
-                            </div-->
+                            
                             </div>
 
 
@@ -878,7 +888,7 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Mobile Application Developer</h2>
+                                <h4>Mobile Application Developer</h4>
                                 <span>Multiple locations in United States Of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
@@ -922,12 +932,7 @@ left: 0;
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                We're seeking a dynamic Mobile Application Developer with a deep passion for crafting exceptional mobile experiences through native code and a keen interest in exploring cross-platform solutions like React Native and Flutter. This role is for a developer who excels in creating robust, native applications for iOS and Android and is good at leveraging React Native or Flutter to produce high-quality, cross-platform apps.
-                                </span>
-                            </div-->
+                           
                             </div>
 
 
@@ -935,22 +940,50 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Automation Testing / Analyst</h2>
+                                <h4>Automation Testing / Analyst</h4>
                                 <span>Multiple locations in United States Of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
+									<a href="#0" class="butn butn-md butn-bord butn-rounded job-desc-btn"
+   data-title="Automation Testing / Analyst"
+   data-location="Multiple locations in United States Of America (USA)"
+   data-description="<h4>Role Overview:</h4>
+   <p>We are looking for 4 + years of experience as a Software Automation Testing Engineer to join us, driving the transformation of testing into an efficient end-to-end quality engineering function. Your role involves designing, developing, and executing automated test scripts to ensure software reliability and quality.</p>
+
+   <h4>Responsibilities:</h4>
+   <ul>
+     <li>Develop and maintain automated test scripts using various testing tools.</li>
+     <li>Develop both manual and automated test cases/scripts.</li>
+     <li>Execute automated regression tests on - daily/weekly/monthly, and demand basis.</li>
+	 <li>Identify and document issues detected during automated regression testing for recreation.</li>
+	 <li>Communicate daily and weekly progress updates.</li>
+	 <li>Collaborate with management to provide continuous input for improving the QA process.</li>
+	 <li>Utilize project management tools to report testing task completion to the QA Manager.</li>
+   </ul>
+
+   <h4>Qualifications and Skills Required:</h4>
+   <ul>
+     <li>Bachelor’s degree in Computer Science, Engineering, or related field.</li>
+	<li>Over 4 years of experience as a Software Automation Testing Engineer or a similar role.</li>
+	<li>Proficient in utilizing automation testing tools like Selenium WebDriver, Appium, TestComplete, Ranorex, Katalon Studio, Cucumber, JUnit, TestNG, or similar.</li>
+	<li>Good understanding of software testing principles, methodologies, and practices.</li>
+	<li>Proficiency in programming languages such as Java, Python, or C#.</li>
+	<li>Experience with Agile/Scrum development methodologies.</li>
+	<li>Experience with JIRA/CONFLUENCE.</li>
+	<li>Excellent problem-solving skills and attention to detail.</li>
+	<li>Strong communication and collaboration skills.</li>
+	<li>Capable of working independently and as part of a team in a fast-paced environment.</li>
+   </ul>"
+   data-apply="mailto:hr@risamsoft.com?subject=Application%20-%20Mobile%20Application%20Developer">
+   Job Description
+</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                We are looking for 4 + years of experience as a Software Automation Testing Engineer to join us, driving the transformation of testing into an efficient end-to-end quality engineering function. Your role involves designing, developing, and executing automated test scripts to ensure software reliability and quality.
-                                </span>
-                            </div-->
+                           
                             </div>
 
 
@@ -958,25 +991,17 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Software Developer/Analyst</h2>
+                                <h4>Software Developer/Analyst (Multiple Openings)</h4>
                                 <span>Location : Irving, TX.</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                Create, modify, and test the code and scripts that allow computer applications to run.
-                                Work from specifications drawn up by software and web developers or other individuals.
-                                May develop and write computer programs to store, locate, and retrieve specific documents, data, and information.
-                                Mail Resume to: Risamsoft Inc., 5005 W Royal Ln Suite 148 Irving, TX 75063
-                                </span>
-                            </div-->
+                            
                             </div>
 
 
@@ -985,22 +1010,17 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Java Developer</h2>
+                                <h4>Java Developer</h4>
                                 <span>United States of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                You will be involved in the full development lifecycle of the server components from architecture and design to deployment and integration with other services and partner products.
-                                </span>
-                            </div-->
+                           
                             </div>
 
 
@@ -1008,22 +1028,17 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Google Cloud Platform Engineer</h2>
+                                <h4>Google Cloud Platform Engineer</h4>
                                 <span>United States of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                Looking for someone who has Google Kubernetes Experience (GKE) to configure, deploy, maintain and support web applications, microservices, and etc. Ideally looking for someone who is a GCP cloud.
-                                </span>
-                            </div-->
+                           
                             </div>
 
 
@@ -1031,44 +1046,34 @@ left: 0;
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Senior Scrum Master</h2>
+                                <h4>Senior Scrum Master</h4>
                                 <span>United States of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                Looking for a Senior Scrum Master with working knowledge of agile methodology, techniques, and frameworks, such as Scrum or Kanban, to deliver solutions. Strong analytical and problem-solving skills is a must.
-                                </span>
-                            </div-->
+                           
                             </div>
 
 
                             <div class="item mb-10">
                             <div class="d-flex">
                                 <div class="cont">
-                                <h2>Aws Database Engineer</h2>
+                                <h4>Aws Database Engineer</h4>
                                 <span>United States of America (USA)</span>
                                 </div>
                                 <div class="ml-auto">
                                 <div class="job-buttons">
-                                    <a href="#0" class="butn butn-md butn-bord butn-rounded">Job Description</a>
+                                    
                                     <a href="#0" class="butn butn-md butn-bord butn-rounded">Apply Now</a>
                                 </div>
                                 </div>
                             </div>
-                            <!-- description outside flex row -->
-                            <!--div class="job-desc mt-20">
-                                <span>
-                                The Database Engineering team is looking for a Senior AWS Database Engineer with a strong database background. Working knowledge of Linux/Windows administration, automated deployments, scripting (Bash/PowerShell/Python ).
-                                </span>
-                            </div-->
+                           
                         </div>
                     </div>
                 </div>
@@ -1298,7 +1303,7 @@ left: 0;
     </div>
 	
 	<!-- Job Overlay -->
-	<div class="hamenujob" style="border:2px solid RED;">
+	<div class="hamenujob" style="border:0px solid RED;">
          <div class="close-menu cursor-pointer ti-close"></div>
 		 <!--div class="close-menu cursor-pointer">&times;</div-->
 			<div class="container-fluid rest d-flex">
@@ -1414,6 +1419,7 @@ $(document).ready(function(){
     // ensure overlay is visible and animate left -> 0
     $overlay.stop(true).css('display','block').animate({ left: '0' }, 400, function(){
       $overlay.addClass('open');
+	   $('body').addClass('no-scroll');  // disable background scroll
     });
   }
 
@@ -1421,6 +1427,7 @@ $(document).ready(function(){
     // animate left -> -100% then hide/remove open class
     $overlay.stop(true).animate({ left: '-100%' }, 300, function(){
       $overlay.removeClass('open').css('display','none');
+	   $('body').removeClass('no-scroll'); // re-enable scroll
       if (typeof callback === 'function') callback();
     });
   }
